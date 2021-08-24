@@ -1,0 +1,43 @@
+<%- include("header") -%>
+<div class="pop-up">
+    <p>Share your Pallete with this link</p>
+
+    <div><b>http://localhost:3000/<%= Title %></b></div>
+    <div><button id="close">Close</button></div>
+</div>
+
+<h1 id="Title"><%= Title %></h1>
+<div class="contentBox">
+    <div class="colorBox">
+        <div class="color"></div>
+        <div class="code" ><%= colors[0] %></div>
+    </div>
+    <div class="colorBox">
+        <div class="color"></div>
+        <div class="code" ><%= colors[1] %></div>
+    </div>
+    <div class="colorBox">
+        <div class="color"></div>
+        <div class="code"><%= colors[2] %></div>
+    </div>
+    <div class="colorBox">
+        <div class="color"></div>
+        <div class="code"><%= colors[3] %></div>
+    </div>
+    <div class="colorBox">
+        <div class="color"></div>
+        <div class="code"><%= colors[4] %></div>
+    </div>
+    <div class="colorBox">
+        <div class="color"></div>
+        <div class="code"><%= colors[5] %></div>
+    </div>
+</div>
+<div class="actions">
+    <button id="Generate">Generate</button>
+    <button id="Save">Save</button>
+
+</div>
+<script src="js/saved.js"></script>
+
+<%- include("footer") -%>
